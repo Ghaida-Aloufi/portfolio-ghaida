@@ -168,9 +168,10 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
         >
           <a
-            href="/GHAIDA_AL-OUFI_FlowCV_Resume_2026-05-11.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Ghaida_Al-Oufi_Resume.pdf"
             className="btn-primary w-full sm:w-auto text-center"
           >
             <span>View Resume</span>
