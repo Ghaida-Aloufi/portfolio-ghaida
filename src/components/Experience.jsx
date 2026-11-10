@@ -7,8 +7,23 @@ const experiences = [
     icon: FiBriefcase,
     type: 'Work',
     title: 'Front-End Developer Intern',
+    org: 'Elm',
+    period: '09/2026 – Present',
+    location: '',
+    color: '#ec4899',
+    tags: ['Angular', 'TypeScript', 'PrimeNG', 'HTML', 'CSS', 'Figma'],
+    bullets: [
+      'Translated Figma designs into responsive and user-friendly web interfaces using Angular, HTML, CSS, and TypeScript.',
+      'Used PrimeNG components to develop user interfaces based on Figma designs.',
+      'Contributed to dashboard interface development, focusing on responsive layouts and visual consistency with provided designs.',
+    ],
+  },
+  {
+    icon: FiBriefcase,
+    type: 'Work',
+    title: 'Front-End Developer Intern',
     org: 'Beem Company',
-    period: '12/2025 – Present',
+    period: '12/2025 – 09/2026',
     location: 'Riyadh',
     color: '#7c3aed',
     tags: ['React.js', 'JavaScript', 'iOS Web Bridge', 'REST API', 'AI Tools'],
@@ -191,7 +206,7 @@ export default function Experience() {
 
         <div className="space-y-12">
           {experiences.map((exp, i) => (
-            <TimelineItem key={exp.title} exp={exp} index={i} isLast={i === experiences.length - 1} />
+            <TimelineItem key={`${exp.title}-${exp.org}`} exp={exp} index={i} isLast={i === experiences.length - 1} />
           ))}
         </div>
       </div>

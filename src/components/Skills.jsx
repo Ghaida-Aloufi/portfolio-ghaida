@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 import {
   SiReact, SiJavascript, SiHtml5, SiCss, SiTailwindcss,
-  SiGit, SiGithub, SiFigma, SiOpenai,
+  SiGit, SiGithub, SiFigma, SiOpenai, SiAngular, SiPrimeng, SiBitbucket,
 } from 'react-icons/si'
 import { FiMonitor, FiTool } from 'react-icons/fi'
 import { TbBrandVscode, TbBrandGithubCopilot } from 'react-icons/tb'
@@ -14,11 +14,14 @@ const frontendSkills = [
   { name: 'CSS3', icon: SiCss, color: '#1572B6', level: 92 },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4', level: 90 },
   { name: 'Responsive Design', icon: FiMonitor, color: '#A78BFA', level: 93 },
+  { name: 'Angular', icon: SiAngular, color: '#DD0031' },
+  { name: 'PrimeNG', icon: SiPrimeng, color: '#F43F5E' },
 ]
 
 const toolSkills = [
   { name: 'Git', icon: SiGit, color: '#F05032', level: 85 },
   { name: 'GitHub', icon: SiGithub, color: '#ffffff', level: 88 },
+  { name: 'Bitbucket', icon: SiBitbucket, color: '#2684FF' },
   { name: 'CI/CD', icon: FiTool, color: '#10B981', level: 75 },
   { name: 'Figma', icon: SiFigma, color: '#F24E1E', level: 78 },
   { name: 'ChatGPT', icon: SiOpenai, color: '#10A37F', level: 90 },
